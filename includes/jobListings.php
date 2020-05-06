@@ -7,8 +7,8 @@ $hakusana = $_POST['sanahaku'];
 // API ID of professions will be stored here
 $categories = array();
 // All professions to check for
-$checks = array("kaikki","terveydenhuolto","sosiaalityo","varhaiskasvatus","opetusala","hallinto","nuorisotyö","tekninen",
-"kotihoito");
+$checks = array("kaikki","opetusala","varhaiskasvatus","sosiaalityo","hallinto","kotihoito","terveydenhuolto","tekninen",
+"nuorisotyö");
 
 // Calculate amount of prosessions to check for
 $checkNum = count($checks);

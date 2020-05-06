@@ -10,33 +10,33 @@
             <div class="modal-body">
                 <div class="form-group" id="categoriesForm">
                     <div class="form-check text-black">
-                        <input type="checkbox" id="terveydenhuolto" value="Terveydenhuolto" name="terveydenhuolto" class="form-check-input" form="searchForm" <?php if(isset($_POST['terveydenhuolto'])) echo "checked='checked'"; ?>>
-                        <label for="terveydenhuolto" class="form-check-label">Terveydenhuolto</label>
+                        <input type="checkbox" id="opetusala" value="Opetusala" name="opetusala" class="form-check-input" form="searchForm" <?php if(isset($_POST['opetusala'])) echo "checked='checked'"; ?>>
+                        <label for="opetusala" class="form-check-label">Opetusala</label>
                         <span class="badge badge-info float-right"><?php getJoblistingAmount(1) ?></span>
                     </div>
                     <div class="form-check text-black">
-                        <input type="checkbox" id="sosiaalityo" value="Sosiaalityö" name="sosiaalityo" class="form-check-input" form="searchForm" <?php if(isset($_POST['sosiaalityo'])) echo "checked='checked'"; ?>>
-                        <label for="sosiaalityo" class="form-check-label">Sosiaalityo</label>
+                        <input type="checkbox" id="varhaiskasvatus" value="Varhaiskasvatus" name="varhaiskasvatus" class="form-check-input" form="searchForm" <?php if(isset($_POST['varhaiskasvatus'])) echo "checked='checked'"; ?>>
+                        <label for="varhaiskasvatus" class="form-check-label">Varhaiskasvatus</label>
                         <span class="badge badge-info float-right"><?php getJoblistingAmount(2) ?></span>
                     </div>
                     <div class="form-check text-black">
-                        <input type="checkbox" value="Varhaiskasvatus ja esiopetus" id="varhaiskasvatus" name="varhaiskasvatus" class="form-check-input"  form="searchForm" <?php if(isset($_POST['varhaiskasvatus'])) echo "checked='checked'"; ?>  />
-                        <label for="varhaiskasvatus" class="form-check-label">Varhaiskasvatus ja esiopetus</label>
+                        <input type="checkbox" value="Sosiaaliala" id="sosiaaliala" name="sosiaalityo" class="form-check-input"  form="searchForm" <?php if(isset($_POST['sosiaalityo'])) echo "checked='checked'"; ?>  />
+                        <label for="sosiaalityo" class="form-check-label">Sosiaaliala</label>
                         <span class="badge badge-info float-right"><?php getJoblistingAmount(3) ?></span>
                     </div>
                     <div class="form-check text-black">
-                        <input type="checkbox" value="Opetusala" id="opetusala" name="opetusala" class="form-check-input"  form="searchForm" <?php if(isset($_POST['opetusala'])) echo "checked='checked'"; ?>  />
-                        <label for="opetusala" class="form-check-label">Opetusala</label>
+                        <input type="checkbox" value="Hallinto-, esimies- ja asiantuntijatyö" id="Hallinto" name="hallinto" class="form-check-input"  form="searchForm" <?php if(isset($_POST['hallinto'])) echo "checked='checked'"; ?>  />
+                        <label for="hallinto" class="form-check-label">Hallinto-, esimies- ja asiantuntijatyö</label>
                         <span class="badge badge-info float-right"><?php getJoblistingAmount(4) ?></span>
                     </div>
                     <div class="form-check text-black">
-                        <input type="checkbox" id="Hallinto" value="Hallinto" name="hallinto" class="form-check-input" form="searchForm" <?php if(isset($_POST['hallinto'])) echo "checked='checked'"; ?>>
-                        <label for="Hallinto" class="form-check-label">Hallinto</label>
+                        <input type="checkbox" id="kotihoito" value="Kotihoito ja erityisasuminen" name="kotihoito" class="form-check-input" form="searchForm" <?php if(isset($_POST['kotihoito'])) echo "checked='checked'"; ?>>
+                        <label for="kotihoito" class="form-check-label">Kotihoito ja erityisasuminen</label>
                         <span class="badge badge-info float-right"><?php getJoblistingAmount(5) ?></span>
                     </div>
                     <div class="form-check text-black">
-                        <input type="checkbox" id="nuorisotyö" value="Nuorisotyö ja liikuntapalvelut" name="nuorisotyö" class="form-check-input" form="searchForm" <?php if(isset($_POST['nuorisotyö'])) echo "checked='checked'"; ?>>
-                        <label for="nuorisotyö" class="form-check-label">Nuorisotyö ja liikuntapalvelut</label>
+                        <input type="checkbox" id="terveydenhuolto" value="Terveyden- ja sairaanhoito" name="terveydenhuolto" class="form-check-input" form="searchForm" <?php if(isset($_POST['terveydenhuolto'])) echo "checked='checked'"; ?>>
+                        <label for="terveydenhuolto" class="form-check-label">Terveyden- ja sairaanhoito</label>
                         <span class="badge badge-info float-right"><?php getJoblistingAmount(6) ?></span>
                     </div>
                     <div class="form-check text-black">
@@ -45,8 +45,8 @@
                         <span class="badge badge-info float-right"><?php getJoblistingAmount(7) ?></span>
                     </div>
                     <div class="form-check text-black">
-                        <input type="checkbox" id="kotihoito" value="Kotihoito" name="kotihoito" class="form-check-input" form="searchForm" <?php if(isset($_POST['kotihoito'])) echo "checked='checked'"; ?>>
-                        <label for="kotihoito" class="form-check-label">Kotihoito</label>
+                        <input type="checkbox" id="nuorisotyö" value="Liikunta-, kirjasto-, kulttuuri- ja nuorisoala" name="nuorisotyö" class="form-check-input" form="searchForm" <?php if(isset($_POST['nuorisotyö'])) echo "checked='checked'"; ?>>
+                        <label for="nuorisotyö" class="form-check-label">Liikunta-, kirjasto-, kulttuuri- ja nuorisoala</label>
                         <span class="badge badge-info float-right"><?php getJoblistingAmount(8) ?></span>
                     </div>
                 </div>
