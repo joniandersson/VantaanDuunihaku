@@ -23,9 +23,6 @@ function fixURL($string){
     }else if($string == "http://gis.vantaa.fi/rest/tyopaikat/v1/Terveyden- ja sairaanhoito/") {
         $fixedEncodedUrl = "http://gis.vantaa.fi/rest/tyopaikat/v1/Terveyden-%20ja%20sairaanhoito";
         return $fixedEncodedUrl;
-    }else if($string == "http://gis.vantaa.fi/rest/tyopaikat/v1/Liikunta-, kirjasto-, kulttuuri- ja nuorisoala/") {
-        $fixedEncodedUrl = "http://gis.vantaa.fi/rest/tyopaikat/v1/Liikunta-,%20kirjasto-,%20kulttuuri-%20ja%20nuorisoala";
-        return $fixedEncodedUrl;
     }else{
         $url_utf8 = urlencode($string);
         $fixedEncodedUrl = str_replace(['%2F', '%3A', '%C3%B62F'], ['/', ':', 'ö'], $url_utf8);
@@ -59,19 +56,17 @@ function professionTitleToID($professionTitle){
         return "0";
     }else if ($professionTitle == "Opetusala"){
         return "1";
-    }else if ($professionTitle == "Varhaiskasvatus"){
-        return "2";
-    }else if ($professionTitle == "Sosiaaliala"){
-        return "3";
-    }else if ($professionTitle == "Hallinto-, esimies- ja asiantuntijatyö"){
-        return "4";
     }else if ($professionTitle == "Kotihoito ja erityisasuminen"){
-        return "5";
+        return "2";
     }else if ($professionTitle == "Terveyden- ja sairaanhoito"){
+        return "3";
+    }else if ($professionTitle == "Sosiaaliala"){
+        return "4";
+    }else if ($professionTitle == "Varhaiskasvatu"){
+        return "5";
+    }else if ($professionTitle == "Hallinto-, esimies- ja asiantuntijaty"){
         return "6";
     }else if ($professionTitle == "Tekninen ala"){
         return "7";
-    }else if ($professionTitle == "Liikunta-, kirjasto-, kulttuuri- ja nuorisoala"){
-        return "8";
     }
 }
